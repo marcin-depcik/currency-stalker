@@ -1,0 +1,23 @@
+.content .chart-card {
+  margin-bottom: 2rem;
+
+  .chart {
+    position: relative;
+    margin-top: 2rem;
+    height: 40vw;
+    max-height: 400px;
+  }
+
+  .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    p {
+      color: var(--clr-primary-7);
+      font-size: 1rem;
+    }
+  }
+}

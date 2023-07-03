@@ -1,0 +1,39 @@
+.data-board {
+  flex-direction: column;
+  margin: auto auto 3rem;
+  width: 80%;
+  max-width: 920px;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    gap: 1.5rem;
+
+    .base-card.title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      span.icon {
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    &.fold {
+      .content {
+        display: none;
+      }
+
+      .base-card.title span.icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

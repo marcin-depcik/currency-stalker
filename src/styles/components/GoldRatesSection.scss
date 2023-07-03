@@ -1,0 +1,45 @@
+section.gold-rates {
+  .chart {
+    position: relative;
+    margin-top: 2rem;
+    height: 40vw;
+    max-height: 400px;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    p {
+      color: var(--clr-primary-7);
+      font-size: 1rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        padding: 0.25rem;
+        border: 2px solid var(--clr-grey-9);
+        border-radius: 0.5rem;
+        transition: var(--transition);
+
+        &.active {
+          background-color: var(--clr-primary-4);
+        }
+
+        &:hover {
+          background-color: var(--clr-primary-4);
+        }
+      }
+    }
+  }
+}

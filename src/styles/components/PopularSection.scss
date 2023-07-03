@@ -1,0 +1,119 @@
+section.popular {
+  .content {
+    display: inherit;
+    gap: inherit;
+
+    .small-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+
+      .trend {
+        font-size: 2.75rem;
+        margin-right: 1.25rem;
+        border: 1px solid;
+        border-radius: 0.5rem;
+        padding: 0.25rem;
+        background-color: transparent;
+
+        &.up {
+          color: var(--clr-green-dark);
+          background-color: var(--clr-green-light);
+          border-color: var(--clr-green-dark);
+        }
+        &.down {
+          color: var(--clr-red-very-dark);
+          background-color: var(--clr-red-very-dark-shade);
+          border-color: var(--clr-red-very-dark);
+        }
+        &.flat {
+          color: var(--clr-primary-7);
+          border-color: var(--clr-primary-7);
+        }
+      }
+
+      .text {
+        .wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 0.25rem;
+          min-width: 165px;
+
+          span {
+            color: var(--clr-primary-7);
+          }
+
+          .trend {
+            font-size: 0.65rem;
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 1px 5px;
+            margin: 0;
+            background-color: transparent;
+
+            &.up {
+              color: var(--clr-green-dark);
+              background-color: var(--clr-green-light);
+              border-color: var(--clr-green-dark);
+            }
+            &.down {
+              color: var(--clr-red-very-dark);
+              background-color: var(--clr-red-very-dark-shade);
+              border-color: var(--clr-red-very-dark);
+            }
+            &.flat {
+              visibility: hidden;
+            }
+          }
+        }
+
+        h3 {
+          margin: 0;
+        }
+      }
+    }
+
+    .logo {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+
+      span {
+        text-align: center;
+
+        &.icon {
+          font-size: 3rem;
+          margin-bottom: 0.5rem;
+        }
+
+        &.name {
+          color: var(--clr-primary-7);
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 470px) {
+      .small-card .info .trend.icon {
+        font-size: 1.75rem;
+        border-radius: 0.25rem;
+        padding: 0.15rem;
+      }
+    }
+    @media screen and (max-width: 380px) {
+      .small-card .info .trend.icon {
+        display: none;
+      }
+    }
+  }
+}
